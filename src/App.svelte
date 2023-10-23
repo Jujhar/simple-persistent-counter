@@ -32,7 +32,7 @@ github: "jujhar"
         }
         output += "<img style='display: inline;height: 30px;" +
          contrastMarker +
-         "' src='https://raw.githubusercontent.com/Silbad/pixa/main/icons/bird.svg' />";
+        "' src='https://icons.veryicon.com/png/Holiday/Swarm%20App%20Sticker/Zzz.png' />";
       }
     }
 
@@ -92,7 +92,7 @@ github: "jujhar"
        }
        output += "<img style='display: inline;height: 30px;" +
         contrastMarker +
-        "' src='https://raw.githubusercontent.com/Silbad/pixa/main/icons/bird.svg' />";
+        "' src='https://icons.veryicon.com/png/Holiday/Swarm%20App%20Sticker/Zzz.png' />";
      }
 
      console.log(e.keyCode);
@@ -128,11 +128,12 @@ github: "jujhar"
 <body style="background-color: {color};">
 <div class="mb-10">
 <center>
-<h1 class="text-3xl" style="margin-bottom:30px;background-color: #f0756e;" title="{state}">
+<h1 class="text-3xl" style="margin-bottom:30px;background-color: #f0756e;padding:10px;" title="{state}">
   {@html output}
 </h1>
 </center>
-<input active value="Y" title="Ignore this" />
+<input  bind:value={state}  active disabled title="Ignore this" />
+<!--Enter a value (to go backwards)-->
 <br />
 <br />
 </div>
